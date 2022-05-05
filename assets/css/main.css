@@ -3358,10 +3358,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#header .logo span {
-				display: none;
-			}
-
 			#header nav a[href="#menu"] {
 				overflow: hidden;
 				padding-right: 0 !important;
@@ -3410,14 +3406,14 @@ input, select, textarea {
 	}
 
 		#banner:after {
-			-moz-transition: opacity 2.5s ease;
+			/*-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
 			-ms-transition: opacity 2.5s ease;
 			transition: opacity 2.5s ease;
 			-moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			transition-delay: 0.75s;*/
 			pointer-events: none;
 			background-color: #ebd67a;
 			content: '';
@@ -3574,8 +3570,12 @@ input, select, textarea {
 				#banner.major {
 					height: auto;
 					min-height: 0;
-					max-height: none;
+					
 				}
+			.services-ul{
+				display: flex;
+				flex-direction: column;
+			}
 
 		}
 
